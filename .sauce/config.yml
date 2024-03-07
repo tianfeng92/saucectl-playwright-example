@@ -17,28 +17,8 @@ suites:
   - name: "Firefox Win"
     platformName: "Windows 11"
     screenResolution: "1440x900"
-    testMatch: ['.*.js']
+    testMatch: ['packages/playwright/tests/.*.ts']
     params:
       browserName: "firefox"
       project: "firefox"  # Runs the project that's defined in `playwright.config.js`
-  - name: "Chromium Mac"
-    platformName: "macOS 12"
-    screenResolution: "1440x900"
-    testMatch: ['.*.js']
-    params:
-      browserName: "chromium"
-      project: "chromium"
-  - name: "Webkit Win"
-    platformName: "Windows 11"
-    screenResolution: "1440x900"
-    testMatch: ['.*.js']
-    params:
-      browserName: "webkit"
-      project: "webkit"
-# Controls what artifacts to fetch when the suites have finished.
-# artifacts:
-#   download:
-#     when: always
-#     match:
-#       - console.log
-#     directory: ./artifacts/
+ 
